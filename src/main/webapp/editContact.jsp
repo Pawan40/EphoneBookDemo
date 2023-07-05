@@ -13,7 +13,7 @@
 <body>
 	<%@include file="component/navbar.jsp"%>
 <%
-	if (user == null) {
+	if (user== null) {
 		session.setAttribute("invaliduser", "Please Login");
 		response.sendRedirect("login.jsp");
 	}
